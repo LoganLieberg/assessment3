@@ -1,0 +1,21 @@
+<h1 ng-init="getHeroData()">See your heroes</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Alias</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>City</th>
+      <th>Power</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+  <tbody ng-repeat="hero in heroesArray">
+    <td>{{hero.alias}}</td>
+    <td>{{hero.firstname}}</td>
+    <td>{{hero.lastname}}</td>
+    <td>{{hero.city}}</td>
+    <td>{{hero.power_name}}</td>
+    <td><button>Delete</button></td>
+  </tbody>
+  <a href="#createHeroes">Create more heroes!</a>

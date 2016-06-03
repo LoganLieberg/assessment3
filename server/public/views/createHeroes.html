@@ -1,0 +1,22 @@
+<div ng-init="getPowerData()">
+  <h2>Create a hero</h2>
+  <form ng-submit="createHero()">
+    <div>
+      <label for="alias">Alias</label>
+      <input type="text" ng-model="hero.alias" />
+
+      <label for="firstname">First Name</label>
+      <input type="text" ng-model="hero.firstname" />
+
+      <label for="lastname">Last Name</label>
+      <input type="text" ng-model="hero.lastname" />
+
+      <label for="city">City</label>
+      <input type="text" ng-model="hero.city" />
+
+      <select  ng-options="power as power.power_name for power in powers" ng-model="hero.power_name"></select>
+      <input class="btn btn-default" type="submit" name="submit" />
+    </div>
+    <a href="#seeHeroes">See your Heroes!</a>
+  </form>
+</div>
